@@ -1,0 +1,9 @@
+SpeechRecognition==3.10.0
+pyttsx3==2.90
+pywhatkit==5.4
+strands-agents==0.1.0
+strands-agents-tools
+pytest==7.4.3
+hypothesis==6.92.1
+PyAudio==0.2.14
+Pillow>=10.0.0

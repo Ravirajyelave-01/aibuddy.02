@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  voice-assistant:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+      - PYTHONUNBUFFERED=1
+    devices:
+      - /dev/snd:/dev/snd
+    volumes:
+      - ./voice_assistant.log:/app/voice_assistant.log
+    restart: unless-stopped
+    cap_add:
+      - SYS_NICE

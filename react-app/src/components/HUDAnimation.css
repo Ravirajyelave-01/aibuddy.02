@@ -1,0 +1,17 @@
+.hud-animation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.15;
+  z-index: 1;
+  pointer-events: none;
+  filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.1));
+}
+
+@media (max-width: 768px) {
+  .hud-animation {
+    width: 300px;
+    height: 300px;
+  }
+}
